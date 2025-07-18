@@ -6,9 +6,12 @@
 
 WiFiManager wifiManager;
 WiFiManagerParameter custom_parameter_name("name", "Name", "HeartRate", 128);
-WiFiManagerParameter custom_parameter_target_ip("TargetIP", "TargetIP", "127.000.000.001", 15);
+WiFiManagerParameter custom_parameter_target_ip("TargetIP", "TargetIP", "127.0.0.1", 15);
 WiFiManagerParameter custom_parameter_target_port("TargetPort", "TargetPort", "9000", 5);
-char parameter_name[128];
+
+char parameter_name[129];
+char target_ip[16];
+char target_port[6];
 
 #define Display_BASE_X 0
 #define Display_BASE_Y 24
@@ -54,6 +57,16 @@ void connectWiFiManager() {
     Serial.println("connected...yeey :)");
     StickCP2.Display.print("WiFiManager connected");
   }
+
+  // 拡張パラメータを取得
+  strcpy(parameter_name, custom_parameter_name.getValue());
+  strcpy(target_ip, custom_parameter_target_ip.getValue());
+  strcpy(target_port, custom_parameter_target_port.getValue());
+
+  // IPアドレスとポート番号を設定
+  targetIP.fromString(target_ip);
+  targetPort = atoi(target_port);
+  Serial.printf("Target IP: %s, Port: %d\n", targetIP.toString().c_str(), targetPort);
 }
 
 void initWiFiManager() {
@@ -73,11 +86,6 @@ void initWiFiManager() {
     StickCP2.Display.print("WiFi OK");
     delay(1000);
   }
-
-  // 拡張パラメータを取得
-  strcpy(parameter_name, custom_parameter_name.getValue());
-  targetIP.fromString(custom_parameter_target_ip.getValue());
-  targetPort = atoi(custom_parameter_target_port.getValue());
 }
 
 void arrayInit()
