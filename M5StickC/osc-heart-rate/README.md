@@ -9,7 +9,7 @@ cluster OSC機能を使って ワールド内で 心拍線センサーの値を�
 - [M5StickC Plus2](https://www.switch-science.com/products/9420?_pos=2&_sid=c7a9ffe1e&_ss=r)
 - [GROVE - 心拍センサ](https://www.switch-science.com/products/2526?variant=42381928988870)
 
-# 開発環境
+## 開発環境
 VSCode + PlatformIO
 1. VSCode(Visual STudio Code)をインストール
 2. PlatformIOをインストール
@@ -20,7 +20,7 @@ VSCode + PlatformIO
    code .
    ```
 
-# 利用ライブラリ
+## 利用ライブラリ
 `lib/setup.sh` を実行して、必要なライブラリを取得できます 
 
 ```
@@ -35,7 +35,7 @@ chmod +x setup.sh
 # git clone https://github.com/tzapu/WiFiManager.git
 ```
 
-# OSC 送信データ
+## OSC 送信データ
 
 ```
 /avatar/parameters/HeartRate [timestamp (ms)] [デバイス名] [心拍数]

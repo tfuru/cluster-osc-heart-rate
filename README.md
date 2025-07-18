@@ -12,7 +12,7 @@ Unity(Cluster Creator Kit Script)
 [README](./Unity/README.md)
 - cluster-osc-heart-rate.unitypackage  
 
-# サンプル設置 cluster ワールド
+## サンプル設置 cluster ワールド
 [OSC 心拍線センサー サンプル](https://cluster.mu/w/1f5c2d7d-23d3-45f3-b7c3-3f770c4ca261)  
 心拍センサーデバイス があれば表示を試すことが出来ます  
 1. cluster アプリを起動
