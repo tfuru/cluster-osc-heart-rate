@@ -35,6 +35,12 @@ chmod +x setup.sh
 # git clone https://github.com/tzapu/WiFiManager.git
 ```
 
+## 利用方法
+1. 心拍センサーデバイス(M5StickC Plus2 ) に電源を入れて `M% ボタン` を押す
+2. スマートフォンなどで Wi-Fi AP `OSC App` に接続する
+3. SSID,Password や OSC デバイス名, 送信先 IPアドレス, ポートを設定する
+4. 耳たぶにセンサーを装着する
+
 ## OSC 送信データ
 
 ```
