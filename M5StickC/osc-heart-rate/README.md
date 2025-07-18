@@ -34,3 +34,10 @@ chmod +x setup.sh
 # git clone https://github.com/CNMAT/OSC.git
 # git clone https://github.com/tzapu/WiFiManager.git
 ```
+
+# OSC 送信データ
+
+```
+/avatar/parameters/HeartRate [timestamp (ms)] [デバイス名] [心拍数]
+/avatar/parameters/HeartRate 1752857438185 HeartRate 94
+```

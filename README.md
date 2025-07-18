@@ -24,3 +24,10 @@ Unity(Cluster Creator Kit Script)
 7. 耳たぶにセンサーを装着する
 8. cluster ワールドで 心拍が表示されることを確認する
 
+
+# OSC 送信データ
+
+```
+/avatar/parameters/HeartRate [timestamp (ms)] [デバイス名] [心拍数]
+/avatar/parameters/HeartRate 1752857438185 HeartRate 94
+```
