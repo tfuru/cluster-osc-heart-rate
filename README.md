@@ -8,5 +8,5 @@ cluster OSC機能を使って ワールド内で 心拍線センサーの値を�
 - GROVE - 心拍センサ  
 
 Unity(Cluster Creator Kit Script)  
-[README](./Unity/osc-heart-rate/README.md)
+[README](./Unity/README.md)
 - cluster-osc-heart-rate.unitypackage  
