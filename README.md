@@ -12,6 +12,13 @@ Unity(Cluster Creator Kit Script)
 [README](./Unity/README.md)
 - cluster-osc-heart-rate.unitypackage  
 
+心拍計アームバンド -> PC -> OSC  
+デバイス作成不要版 市販品の心拍計アームバンドを使ってワールドに 心拍を表示する  
+[README](./Python/README.md)  
+- [心拍計アームバンド HW706](https://amzn.to/4lvoeQe)
+- Pythonスクリプト 
+
+
 ## サンプル設置 cluster ワールド
 [OSC 心拍線センサー サンプル](https://cluster.mu/w/1f5c2d7d-23d3-45f3-b7c3-3f770c4ca261)  
 心拍センサーデバイス があれば表示を試すことが出来ます  
